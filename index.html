@@ -27,18 +27,14 @@
         <span>·</span>
         <span>주말</span>
         <span>·</span>
-        <span>소규모 (최대 3명)</span>
+        <span>소규모</span>
       </div>
       <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight">
         어린이 스키 레슨 ⛷️
       </h1>
-      <p class="text-sky-100 text-base sm:text-lg max-w-2xl leading-relaxed mb-8">
-        코치 1명당 최대 3명까지 진행하는 소규모 주말 스키 레슨입니다. 아이가 무서워하지 않고 편안한 속도로 안전하게 스키의 재미를 배울 수 있도록 도와드려요.
+      <p class="text-sky-100 text-base sm:text-lg max-w-2xl leading-relaxed">
+        최대 3명까지 진행하는 소규모 주말 스키 레슨입니다. 아이가 무서워하지 않고 편안한 속도로 안전하게 스키의 재미를 배울 수 있도록 도와드려요.
       </p>
-      <a href="https://docs.google.com/forms/d/1rMr-queD3_n_qPM19l8y-kQmvIl0NaBYN2fuZrxYh7k/viewform" target="_blank" rel="noopener noreferrer"
-         class="inline-flex items-center justify-center gap-2 bg-white text-sky-900 hover:bg-sky-50 font-bold px-7 py-4 rounded-2xl shadow-lg transition transform hover:-translate-y-0.5 text-base sm:text-lg">
-        <span>✍️ 구글 폼으로 레슨 신청하기</span>
-      </a>
     </div>
   </header>
 
@@ -54,7 +50,7 @@
           6살 때 스키를 시작해서, 한국 초·중학교 시절과 미국 고등학교 시절까지 총 8년 동안 스키 선수로 활동했어요. 그중 2년은 국가대표 꿈나무로 선발되어 훈련했고, 제89회 전국동계체육대회 회전 1위, 제90회 중학부 2위 등 여러 전국 대회에서 입상했어요.
         </p>
         <p>
-          지금은 테크 회사에서 일하고 있고, 스키를 좋아해서 취미로 아이들을 가르쳐 보려고 해요(정식 코칭 사업은 아니에요). 주변 친구들과 초등학생 조카에게도 가르쳐 왔어요. 저도 어릴 때 시작해서 처음 스키를 접하는 아이의 마음에 공감하며 눈높이에 맞춰 차근차근 알려주려고 해요. 무서워하면 절대 무리시키지 않고, 아이가 편안한 속도로 진행해요.
+          지금은 테크 회사에서 일하고 있고, 스키를 좋아해서 취미로 아이들을 가르쳐 보려고 해요. 주변 친구들과 초등학생 조카에게도 가르쳐 왔어요. 저도 어릴 때 시작해서 처음 스키를 접하는 아이의 마음에 공감하며 눈높이에 맞춰 차근차근 알려주려고 해요. 무서워하면 절대 무리시키지 않고, 아이가 편안한 속도로 진행해요.
         </p>
       </div>
       <div class="mt-5 flex flex-wrap gap-2">
@@ -64,12 +60,12 @@
       </div>
     </section>
 
-    <!-- 🎬 스키 영상 (VIDEO_URL 입력 시 자동 표시) -->
+    <!-- 🎬 스키 영상 (세로 9:16 비율 전용) -->
     <section id="video-section" class="hidden bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80">
-      <h2 class="text-xl sm:text-2xl font-bold flex items-center gap-2.5 mb-4 text-slate-900">
+      <h2 class="text-xl sm:text-2xl font-bold flex items-center gap-2.5 mb-5 text-slate-900">
         <span>🎬</span> 코치 스키 영상
       </h2>
-      <div id="video-container" class="aspect-video w-full rounded-2xl overflow-hidden bg-slate-900 shadow-inner"></div>
+      <div id="video-container" class="aspect-[9/16] w-full max-w-xs mx-auto rounded-2xl overflow-hidden bg-slate-900 shadow-md"></div>
     </section>
 
     <!-- 🎿 수업 내용 -->
@@ -101,7 +97,7 @@
           <div class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">Step 03</div>
           <h3 class="font-bold text-lg text-slate-900 mb-2">상급</h3>
           <p class="text-sm text-slate-600 leading-relaxed">
-            패러렐 턴, 엣지 사용법
+            패럴렐 턴, 엣지 사용법
           </p>
         </div>
       </div>
@@ -109,11 +105,16 @@
 
     <!-- 📅 일정과 가격 -->
     <section class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80">
-      <h2 class="text-xl sm:text-2xl font-bold flex items-center gap-2.5 mb-3 text-slate-900">
-        <span>📅</span> 일정과 가격
-      </h2>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+        <h2 class="text-xl sm:text-2xl font-bold flex items-center gap-2.5 text-slate-900">
+          <span>📅</span> 일정과 가격
+        </h2>
+        <span class="text-xs sm:text-sm font-semibold text-slate-700 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 w-fit">
+          📍 장소: 스노퀄미 패스 Summit West
+        </span>
+      </div>
       <p class="text-slate-600 text-sm sm:text-base mb-6">
-        주말 수업이고, 날짜는 신청서에 가능한 시간을 적어 주시면 맞춰서 조정해요. <strong>3시간 수업이 1회</strong>로 차감돼요.
+        <strong>스노퀄미 패스 Summit West</strong>에서 진행하는 주말 수업이고, 날짜는 신청서에 가능한 시간을 적어 주시면 맞춰서 조정해요. <strong>3시간 수업이 1회</strong>로 차감돼요.
       </p>
 
       <div class="grid gap-4 sm:grid-cols-2 mb-6">
@@ -132,6 +133,7 @@
           <div>
             <span class="inline-block text-xs font-bold bg-slate-700 text-white px-2.5 py-1 rounded-md mb-2">친구·형제와 함께</span>
             <h3 class="text-lg font-bold text-slate-900">그룹 레슨 (최대 3명)</h3>
+            <p class="text-xs text-slate-500 mt-1">3명 시에는 저의 남편도 조인 예정 (스키어)</p>
           </div>
           <div class="mt-4 flex items-baseline gap-1.5">
             <span class="text-3xl font-extrabold text-slate-900">$100</span>
@@ -152,6 +154,10 @@
         <li class="flex items-start gap-2.5">
           <span class="text-sky-600 font-bold">•</span>
           <span><strong>준비물:</strong> 스키복, 장갑, 고글, 보온 내의, 헬멧 (어디서 무엇을 사면 좋은지 문의하시면 알려드려요)</span>
+        </li>
+        <li class="flex items-start gap-2.5">
+          <span class="text-sky-600 font-bold">•</span>
+          <span>그 외 문의는 <strong>카카오톡 ID: somanghan</strong> 으로 편하게 문의 가능해요.</span>
         </li>
       </ul>
     </section>
@@ -176,38 +182,37 @@
         </li>
         <li class="flex items-start gap-2.5">
           <span class="text-emerald-600 font-bold">✔</span>
-          <span>코치 1명당 아이 <strong>최대 3명</strong></span>
+          <span>아이 <strong>최대 3명</strong> 소규모 진행 (3명 시에는 스키어인 저의 남편도 함께 조인 예정이에요)</span>
         </li>
         <li class="flex items-start gap-2.5">
           <span class="text-emerald-600 font-bold">✔</span>
           <span><strong>면책 동의서(waiver)와 건강 정보 확인</strong> 후 진행해요. 수업 중 바로 연락할 수 있도록 보호자 연락처를 받아요.</span>
         </li>
       </ul>
-      <div class="mt-5 p-4 bg-amber-50 border border-amber-200 rounded-2xl text-amber-900 text-sm font-medium">
-        💡 처음 한두 번은 아이가 편안한지 보면서 가볍게 진행하는 걸 추천드려요.
-      </div>
     </section>
 
     <!-- ✍️ 신청 안내 CTA -->
     <section class="hero-bg text-white rounded-3xl p-8 sm:p-10 text-center shadow-xl">
       <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">✍️ 레슨 신청서 작성하기</h2>
       <p class="text-sky-100 text-sm sm:text-base mb-6 max-w-xl mx-auto">
-        카드번호 등 결제 정보는 적지 마세요. 신청서를 제출해 주시면 확인 후 일정 조율 및 안내 연락을 드립니다.
+        신청서를 제출해 주시면 확인 후 일정 조율 및 안내 연락을 드립니다.
       </p>
       <a href="https://docs.google.com/forms/d/1rMr-queD3_n_qPM19l8y-kQmvIl0NaBYN2fuZrxYh7k/viewform" target="_blank" rel="noopener noreferrer"
          class="inline-flex items-center justify-center gap-2 bg-white text-sky-900 hover:bg-sky-50 font-extrabold px-8 py-4 rounded-2xl shadow-lg transition transform hover:-translate-y-0.5 text-base sm:text-lg">
         <span>구글 폼 신청서 열기 ↗</span>
       </a>
+      <p class="text-sky-100 text-xs sm:text-sm mt-5">
+        💬 그 외 궁금한 점은 카카오톡 <strong>somanghan</strong>으로 문의 가능해요.
+      </p>
     </section>
 
   </main>
 
   <footer class="text-center py-8 text-xs text-slate-400">
-    스노퀄미 패스 Summit West 어린이 스키 레슨
+    스노퀄미 패스 Summit West 어린이 스키 레슨 · 카카오톡 문의: somanghan
   </footer>
 
   <script>
-    // 스키 영상을 넣으시려면 아래 따옴표 안에 유튜브 주소나 영상 파일 이름(예: "ski.mp4")을 넣어주세요!
     const VIDEO_URL = "https://youtube.com/shorts/41AMnrGhISM?is=3ji8v5FvHGtiY2Aw";
 
     function renderVideo(url) {
@@ -231,7 +236,7 @@
       if (embedUrl) {
         container.innerHTML = `<iframe class="w-full h-full" src="${embedUrl}" title="Ski Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
       } else {
-        container.innerHTML = `<video class="w-full h-full object-cover" controls playsinline src="${url}"></video>`;
+        container.innerHTML = `<video class="w-full h-full object-contain bg-black" controls playsinline src="${url}"></video>`;
       }
     }
 
