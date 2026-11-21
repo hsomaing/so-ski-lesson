@@ -20,19 +20,10 @@
 <body class="antialiased selection:bg-sky-200 selection:text-sky-900">
 
   <!-- Hero Section -->
-  <header class="hero-bg text-white py-12 sm:py-14 px-5 sm:px-8 shadow-lg relative overflow-hidden">
+  <header class="hero-bg text-white py-10 sm:py-14 px-5 sm:px-8 shadow-lg relative overflow-hidden">
     <div class="max-w-3xl mx-auto relative z-10">
-      <!-- Top Bar: Badge + Language Toggle -->
-      <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
-        <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold border border-white/20">
-          <span data-i18n="badgeLocation">🏔️ 스노퀄미 패스</span>
-          <span>·</span>
-          <span data-i18n="badgeDay">주말</span>
-          <span>·</span>
-          <span data-i18n="badgeSize">소규모</span>
-        </div>
-
-        <!-- Language Switcher -->
+      <!-- Language Switcher (Top Right) -->
+      <div class="flex justify-end mb-4">
         <div class="inline-flex items-center bg-white/15 backdrop-blur-md p-1 rounded-full border border-white/25 text-xs font-bold" role="group" aria-label="Language switcher">
           <button id="btn-ko" onclick="setLanguage('ko')" class="px-3 py-1 rounded-full transition">한국어</button>
           <button id="btn-en" onclick="setLanguage('en')" class="px-3 py-1 rounded-full transition">EN</button>
@@ -40,6 +31,13 @@
       </div>
 
       <div class="text-center sm:text-left">
+        <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-4 border border-white/20">
+          <span data-i18n="badgeLocation">🏔️ 스노퀄미 패스</span>
+          <span>·</span>
+          <span data-i18n="badgeDay">주말</span>
+          <span>·</span>
+          <span data-i18n="badgeSize">소규모</span>
+        </div>
         <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight" data-i18n="heroTitle">
           어린이 스키 레슨 ⛷️
         </h1>
@@ -169,7 +167,7 @@
         </li>
         <li class="flex items-start gap-2.5">
           <span class="text-sky-600 font-bold">•</span>
-          <span data-i18n-html="note4">그 외 문의는 <strong>카카오톡 ID: somanghan</strong> 으로 편하게 문의 가능해요.</span>
+          <span data-i18n-html="note4">그 외 문의는 <strong>카카오톡 ID: somanghan</strong> 또는 이메일 <a href="mailto:hsomaing@gmail.com" class="underline font-semibold text-sky-700">hsomaing@gmail.com</a> 으로 편하게 문의 가능해요.</span>
         </li>
       </ul>
     </section>
@@ -214,23 +212,22 @@
         <span data-i18n="ctaBtn">구글 폼 신청서 열기 ↗</span>
       </a>
       <p class="text-sky-100 text-xs sm:text-sm mt-5" data-i18n-html="ctaContact">
-        💬 그 외 궁금한 점은 카카오톡 <strong>somanghan</strong>으로 문의 가능해요.
+        💬 그 외 궁금한 점은 카카오톡 <strong>somanghan</strong> 또는 <a href="mailto:hsomaing@gmail.com" class="underline font-semibold">hsomaing@gmail.com</a>으로 문의 가능해요.
       </p>
     </section>
 
   </main>
 
   <footer class="text-center py-8 text-xs text-slate-400" data-i18n="footer">
-    스노퀄미 패스 어린이 스키 레슨 · 카카오톡 문의: somanghan
+    스노퀄미 패스 어린이 스키 레슨 · 카카오톡: somanghan · 이메일: hsomaing@gmail.com
   </footer>
 
   <script>
     const VIDEO_URL = "https://youtube.com/shorts/41AMnrGhISM?is=3ji8v5FvHGtiY2Aw";
 
-    // 영문 구글 폼을 따로 만드시면 아래 en 주소만 교체해 주세요!
     const FORM_URLS = {
       ko: "https://docs.google.com/forms/d/1rMr-queD3_n_qPM19l8y-kQmvIl0NaBYN2fuZrxYh7k/viewform",
-      en: "https://docs.google.com/forms/d/1rMr-queD3_n_qPM19l8y-kQmvIl0NaBYN2fuZrxYh7k/viewform"
+      en: "https://docs.google.com/forms/d/1_vb4xyR5H4Jnrwb4ZUSyPokC87fgg68h_caj7wxKGIs/viewform"
     };
 
     const translations = {
@@ -255,7 +252,7 @@
         step2Title: "초급 ~ 중급",
         step2Desc: "초록 슬로프에서 A자 턴 자유자재로, 11자로 멈추기",
         step3Title: "상급",
-        step3Desc: "패러렐 턴, 엣지 사용법",
+        step3Desc: "패럴렐 턴, 엣지 사용법",
         pricingTitle: "일정과 가격",
         locationBadge: "📍 장소: 스노퀄미 패스",
         pricingDesc: "<strong>스노퀄미 패스</strong>에서 진행하는 주말 수업이고, 날짜는 신청서에 가능한 시간을 적어 주시면 맞춰서 조정해요. <strong>3시간 수업이 1회</strong>로 차감돼요.",
@@ -269,7 +266,7 @@
         note1: "<strong>리프트권과 장비 렌탈은 포함이 아니에요.</strong> 관련 안내가 필요하시면 준비를 도와드릴 수 있어요.",
         note2: "<strong>간식(프로틴바, 빵)</strong>은 제가 준비해요.",
         note3: "<strong>준비물:</strong> 스키복, 장갑, 고글, 보온 내의, 헬멧 (어디서 무엇을 사면 좋은지 문의하시면 알려드려요)",
-        note4: "그 외 문의는 <strong>카카오톡 ID: somanghan</strong> 으로 편하게 문의 가능해요.",
+        note4: '그 외 문의는 <strong>카카오톡 ID: somanghan</strong> 또는 이메일 <a href="mailto:hsomaing@gmail.com" class="underline font-semibold text-sky-700">hsomaing@gmail.com</a> 으로 편하게 문의 가능해요.',
         policyTitle: "예약과 취소 · 🛡️ 안전",
         policy1: "<strong>예약금 $50</strong> (자세한 조건은 신청 후 안내드려요)",
         policy2: "일정 변경은 <strong>24시간 전까지</strong> 알려 주세요.",
@@ -279,8 +276,8 @@
         ctaTitle: "✍️ 레슨 신청서 작성하기",
         ctaDesc: "신청서를 제출해 주시면 확인 후 일정 조율 및 안내 연락을 드립니다.",
         ctaBtn: "구글 폼 신청서 열기 ↗",
-        ctaContact: "💬 그 외 궁금한 점은 카카오톡 <strong>somanghan</strong>으로 문의 가능해요.",
-        footer: "스노퀄미 패스 어린이 스키 레슨 · 카카오톡 문의: somanghan"
+        ctaContact: '💬 그 외 궁금한 점은 카카오톡 <strong>somanghan</strong> 또는 <a href="mailto:hsomaing@gmail.com" class="underline font-semibold">hsomaing@gmail.com</a>으로 문의 가능해요.',
+        footer: "스노퀄미 패스 어린이 스키 레슨 · 카카오톡: somanghan · 이메일: hsomaing@gmail.com"
       },
       en: {
         pageTitle: "Kids Ski Lessons ⛷️ | Snoqualmie Pass",
@@ -317,7 +314,7 @@
         note1: "<strong>Lift tickets and gear rentals are not included.</strong> Happy to guide you through rentals and ticket options if needed.",
         note2: "<strong>Snacks (protein bars, bread/pastries)</strong> are provided.",
         note3: "<strong>What to bring:</strong> Ski jacket & pants, gloves, goggles, thermal base layers, helmet (feel free to ask for gear recommendations).",
-        note4: "For other questions, feel free to reach out on <strong>KakaoTalk (ID: somanghan)</strong>.",
+        note4: 'For other questions, feel free to email me at <a href="mailto:hsomaing@gmail.com" class="underline font-semibold text-sky-700">hsomaing@gmail.com</a>.',
         policyTitle: "Booking, Cancellation & Safety",
         policy1: "<strong>$50 deposit</strong> (details shared after submitting the form)",
         policy2: "Please let me know at least <strong>24 hours in advance</strong> for schedule changes.",
@@ -327,8 +324,8 @@
         ctaTitle: "✍️ Sign Up for a Lesson",
         ctaDesc: "Submit the form and I'll reach out to coordinate your schedule and share next steps.",
         ctaBtn: "Open Google Form ↗",
-        ctaContact: "💬 Questions? Reach out on KakaoTalk: <strong>somanghan</strong>",
-        footer: "Snoqualmie Pass Kids Ski Lessons · KakaoTalk: somanghan"
+        ctaContact: '💬 Questions? Email me at <a href="mailto:hsomaing@gmail.com" class="underline font-semibold">hsomaing@gmail.com</a>',
+        footer: "Snoqualmie Pass Kids Ski Lessons · Contact: hsomaing@gmail.com"
       }
     };
 
